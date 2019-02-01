@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CSTCE16M0V53-R0
+D Three pin crystal, GND on pin 2
+K quartz ceramic resonator oscillator
+F ~
+$ENDCMP
+#
+$CMP SKRPACE010
+D Push button switch, normally closed, generic, four pins
+K switch normally-closed pushbutton push-button
+$ENDCMP
+#
+$CMP TD62083AFNG
+D Higher Voltage, High Current Darlington Transistor Arrays, 5V CMOS/TTL-compatible input, SSOP18
+K darlington transistor array
+$ENDCMP
+#
+#End Doc Library

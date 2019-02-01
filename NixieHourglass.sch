@@ -1,0 +1,1078 @@
+EESchema Schematic File Version 4
+LIBS:NixieHourglass-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L russian-nixies:IN-14 N1
+U 1 1 5C4155AF
+P 8850 2400
+F 0 "N1" V 8946 1597 50  0000 R CNN
+F 1 "IN-14" V 8855 1597 50  0000 R CNN
+F 2 "NixieHourGlass:IN-14_SMD" H 8850 2550 50  0001 C CNN
+F 3 "" H 8850 2400 50  0001 C CNN
+	1    8850 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NixieHourglass-rescue:TD62083AFNG-NixieHourGlass U4
+U 1 1 5C4166F8
+P 8650 3500
+F 0 "U4" H 8650 4165 50  0000 C CNN
+F 1 "TD62083AFNG" H 8650 4074 50  0000 C CNN
+F 2 "Package_SO:SSOP-18_4.4x6.5mm_P0.65mm" H 8700 2950 50  0001 L CNN
+F 3 "" H 8750 3300 50  0001 C CNN
+	1    8650 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0101
+U 1 1 5C4579F7
+P 1950 4950
+F 0 "#PWR0101" H 1950 4700 50  0001 C CNN
+F 1 "GND" H 1955 4777 50  0000 C CNN
+F 2 "" H 1950 4950 50  0001 C CNN
+F 3 "" H 1950 4950 50  0001 C CNN
+	1    1950 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4700 1950 4950
+$Comp
+L NixieHourglass-rescue:C-Device C2
+U 1 1 5C457A9C
+P 650 2400
+F 0 "C2" H 765 2446 50  0000 L CNN
+F 1 "100nF" H 765 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 688 2250 50  0001 C CNN
+F 3 "~" H 650 2400 50  0001 C CNN
+	1    650  2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:C-Device C1
+U 1 1 5C457B68
+P 600 1300
+F 0 "C1" H 715 1346 50  0000 L CNN
+F 1 "1uF" H 715 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 638 1150 50  0001 C CNN
+F 3 "~" H 600 1300 50  0001 C CNN
+	1    600  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:C-Device C3
+U 1 1 5C457BA2
+P 950 1300
+F 0 "C3" H 1065 1346 50  0000 L CNN
+F 1 "1uF" H 1065 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 988 1150 50  0001 C CNN
+F 3 "~" H 950 1300 50  0001 C CNN
+	1    950  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:C-Device C4
+U 1 1 5C457BCA
+P 1300 1300
+F 0 "C4" H 1415 1346 50  0000 L CNN
+F 1 "4.7uF" H 1415 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1338 1150 50  0001 C CNN
+F 3 "~" H 1300 1300 50  0001 C CNN
+	1    1300 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2000 650  2000
+Wire Wire Line
+	650  2000 650  2250
+Wire Wire Line
+	650  2550 650  2900
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0102
+U 1 1 5C457DBF
+P 650 2900
+F 0 "#PWR0102" H 650 2650 50  0001 C CNN
+F 1 "GND" H 655 2727 50  0000 C CNN
+F 2 "" H 650 2900 50  0001 C CNN
+F 3 "" H 650 2900 50  0001 C CNN
+	1    650  2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0103
+U 1 1 5C457F8F
+P 950 1650
+F 0 "#PWR0103" H 950 1400 50  0001 C CNN
+F 1 "GND" H 955 1477 50  0000 C CNN
+F 2 "" H 950 1650 50  0001 C CNN
+F 3 "" H 950 1650 50  0001 C CNN
+	1    950  1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  1450 600  1500
+Wire Wire Line
+	600  1500 950  1500
+Wire Wire Line
+	1300 1500 1300 1450
+Wire Wire Line
+	950  1450 950  1500
+Connection ~ 950  1500
+Wire Wire Line
+	950  1500 1300 1500
+Wire Wire Line
+	950  1500 950  1650
+Wire Wire Line
+	600  1150 600  1050
+Wire Wire Line
+	600  1050 950  1050
+Wire Wire Line
+	1300 1050 1300 1150
+Wire Wire Line
+	950  1150 950  1050
+Connection ~ 950  1050
+Wire Wire Line
+	950  1050 1300 1050
+Wire Wire Line
+	1300 1050 1950 1050
+Wire Wire Line
+	1950 1050 1950 1700
+Connection ~ 1300 1050
+Wire Wire Line
+	2050 1700 2050 1050
+Wire Wire Line
+	2050 1050 1950 1050
+Connection ~ 1950 1050
+Wire Wire Line
+	2550 3500 3100 3500
+Text Label 3100 3500 0    50   ~ 0
+RESET
+Wire Wire Line
+	2550 3800 3100 3800
+Wire Wire Line
+	2550 3700 3100 3700
+Text Label 3100 3700 0    50   ~ 0
+RXD
+Text Label 3100 3800 0    50   ~ 0
+TXD
+$Comp
+L NixieHourglass-rescue:Q_NPN_BEC-Device Q1
+U 1 1 5C45D885
+P 8850 1100
+F 0 "Q1" H 9041 1146 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 9041 1055 50  0000 L CNN
+F 2 "TO_SOT_SMD:SOT-23" H 9050 1200 50  0001 C CNN
+F 3 "~" H 8850 1100 50  0001 C CNN
+	1    8850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1300 8950 1500
+Wire Wire Line
+	8450 2700 8450 3100
+Wire Wire Line
+	8550 2700 8550 3100
+Wire Wire Line
+	8650 2700 8650 3100
+Wire Wire Line
+	8750 2700 8750 3100
+Wire Wire Line
+	8850 2700 8850 3100
+Wire Wire Line
+	8950 2700 8950 3100
+Wire Wire Line
+	9050 2700 9050 3100
+Wire Wire Line
+	9150 2700 9150 3100
+$Comp
+L NixieHourglass-rescue:Q_NPN_BEC-Device Q2
+U 1 1 5C461ED6
+P 9800 3300
+F 0 "Q2" H 9991 3346 50  0000 L CNN
+F 1 "MMBTA42" H 9991 3255 50  0000 L CNN
+F 2 "TO_SOT_SMD:SOT-23" H 10000 3400 50  0001 C CNN
+F 3 "~" H 9800 3300 50  0001 C CNN
+	1    9800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:Q_NPN_BEC-Device Q3
+U 1 1 5C461F72
+P 10700 3300
+F 0 "Q3" H 10891 3346 50  0000 L CNN
+F 1 "MMBTA42" H 10891 3255 50  0000 L CNN
+F 2 "TO_SOT_SMD:SOT-23" H 10900 3400 50  0001 C CNN
+F 3 "~" H 10700 3300 50  0001 C CNN
+	1    10700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3300 9600 3300
+Wire Wire Line
+	10350 3300 10500 3300
+Wire Wire Line
+	9250 2700 9250 2950
+Wire Wire Line
+	9250 2950 9900 2950
+Wire Wire Line
+	9900 2950 9900 3100
+Wire Wire Line
+	9350 2700 9350 2850
+Wire Wire Line
+	9350 2850 10800 2850
+Wire Wire Line
+	10800 2850 10800 3100
+Wire Wire Line
+	9900 3500 9900 3800
+Wire Wire Line
+	10800 3500 10800 3800
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0104
+U 1 1 5C469CD3
+P 9900 3800
+F 0 "#PWR0104" H 9900 3550 50  0001 C CNN
+F 1 "GND" H 9905 3627 50  0000 C CNN
+F 2 "" H 9900 3800 50  0001 C CNN
+F 3 "" H 9900 3800 50  0001 C CNN
+	1    9900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0105
+U 1 1 5C469D15
+P 10800 3800
+F 0 "#PWR0105" H 10800 3550 50  0001 C CNN
+F 1 "GND" H 10805 3627 50  0000 C CNN
+F 2 "" H 10800 3800 50  0001 C CNN
+F 3 "" H 10800 3800 50  0001 C CNN
+	1    10800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0106
+U 1 1 5C469D36
+P 9450 3800
+F 0 "#PWR0106" H 9450 3550 50  0001 C CNN
+F 1 "GND" H 9455 3627 50  0000 C CNN
+F 2 "" H 9450 3800 50  0001 C CNN
+F 3 "" H 9450 3800 50  0001 C CNN
+	1    9450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3500 9450 3500
+Wire Wire Line
+	9450 3500 9450 3800
+Wire Wire Line
+	2550 2000 3100 2000
+Wire Wire Line
+	2550 2100 3100 2100
+Wire Wire Line
+	2550 2200 3100 2200
+Wire Wire Line
+	2550 3400 3100 3400
+Wire Wire Line
+	2550 3100 3100 3100
+Wire Wire Line
+	2550 3200 3100 3200
+Wire Wire Line
+	2550 3300 3100 3300
+Wire Wire Line
+	2550 4000 3100 4000
+Wire Wire Line
+	8950 900  8950 700 
+Wire Wire Line
+	8650 1100 8100 1100
+Text Label 8100 1100 0    50   ~ 0
+NIX_ANODE
+Text Label 3100 2000 0    50   ~ 0
+NIX_0
+Text Label 3100 2100 0    50   ~ 0
+NIX_1
+Text Label 3100 2200 0    50   ~ 0
+NIX_2
+Text Label 3100 3400 0    50   ~ 0
+SCL
+Wire Wire Line
+	2550 2900 3100 2900
+Wire Wire Line
+	2550 3000 3100 3000
+Text Label 3100 2900 0    50   ~ 0
+NIX_3
+Text Label 3100 3000 0    50   ~ 0
+NIX_4
+Text Label 3100 3100 0    50   ~ 0
+NIX_5
+Text Label 3100 3200 0    50   ~ 0
+NIX_6
+Text Label 3100 3300 0    50   ~ 0
+SDA
+Text Label 3100 4000 0    50   ~ 0
+NIX_8
+Wire Wire Line
+	2550 2500 3100 2500
+Wire Wire Line
+	2550 2400 3100 2400
+Wire Wire Line
+	2550 2300 3100 2300
+Text Label 3100 2300 0    50   ~ 0
+MOSI
+Text Label 3100 2400 0    50   ~ 0
+MISO
+Text Label 3100 2500 0    50   ~ 0
+SCK
+$Comp
+L NixieHourglass-rescue:R-Device R6
+U 1 1 5C488C55
+P 8950 1650
+F 0 "R6" H 9020 1696 50  0000 L CNN
+F 1 "22k" H 9020 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8880 1650 50  0001 C CNN
+F 3 "~" H 8950 1650 50  0001 C CNN
+	1    8950 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2000 8950 1800
+Wire Wire Line
+	2550 4100 3100 4100
+Wire Wire Line
+	2550 4200 3100 4200
+Wire Wire Line
+	2550 4300 3100 4300
+Text Label 3100 4100 0    50   ~ 0
+NIX_9
+Text Label 3100 4200 0    50   ~ 0
+SW_0
+Text Label 3100 4300 0    50   ~ 0
+NIX_ANODE
+Wire Wire Line
+	2550 3900 3100 3900
+Text Label 3100 3900 0    50   ~ 0
+NIX_7
+Wire Wire Line
+	9150 3900 9150 4150
+Wire Wire Line
+	8450 3900 8450 4150
+Wire Wire Line
+	8550 3900 8550 4150
+Text Label 9150 4150 3    50   ~ 0
+NIX_8
+Text Label 8450 4150 3    50   ~ 0
+NIX_1
+Text Label 8550 4150 3    50   ~ 0
+NIX_2
+Wire Wire Line
+	8850 3900 8850 4150
+Wire Wire Line
+	8950 3900 8950 4150
+Wire Wire Line
+	8650 3900 8650 4150
+Wire Wire Line
+	8750 3900 8750 4150
+Text Label 8650 4150 3    50   ~ 0
+NIX_3
+Text Label 8750 4150 3    50   ~ 0
+NIX_4
+Text Label 8850 4150 3    50   ~ 0
+NIX_5
+Text Label 8950 4150 3    50   ~ 0
+NIX_6
+Wire Wire Line
+	9050 3900 9050 4150
+Text Label 9050 4150 3    50   ~ 0
+NIX_7
+Text Label 9500 3300 0    50   ~ 0
+NIX_9
+Text Label 10350 3300 0    50   ~ 0
+NIX_0
+$Comp
+L NixieHourglass-rescue:+HV-NixieHourGlass #PWR0107
+U 1 1 5C4B6610
+P 8950 700
+F 0 "#PWR0107" H 8950 550 50  0001 C CNN
+F 1 "+HV" H 8965 873 50  0000 C CNN
+F 2 "" H 8950 700 50  0001 C CNN
+F 3 "" H 8950 700 50  0001 C CNN
+	1    8950 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0108
+U 1 1 5C4B6E36
+P 950 850
+F 0 "#PWR0108" H 950 700 50  0001 C CNN
+F 1 "+BATT" H 965 1023 50  0000 C CNN
+F 2 "" H 950 850 50  0001 C CNN
+F 3 "" H 950 850 50  0001 C CNN
+	1    950  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:Conn_01x02_Male-Connector J4
+U 1 1 5C4BA536
+P 10450 5450
+F 0 "J4" H 10556 5628 50  0000 C CNN
+F 1 "HV_IN" H 10556 5537 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 10450 5450 50  0001 C CNN
+F 3 "~" H 10450 5450 50  0001 C CNN
+	1    10450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0110
+U 1 1 5C4BA543
+P 10800 5650
+F 0 "#PWR0110" H 10800 5400 50  0001 C CNN
+F 1 "GND" H 10805 5477 50  0000 C CNN
+F 2 "" H 10800 5650 50  0001 C CNN
+F 3 "" H 10800 5650 50  0001 C CNN
+	1    10800 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 5450 10800 5450
+Wire Wire Line
+	10800 5450 10800 5250
+Wire Wire Line
+	10650 5550 10800 5550
+Wire Wire Line
+	10800 5550 10800 5650
+$Comp
+L NixieHourglass-rescue:+HV-NixieHourGlass #PWR0111
+U 1 1 5C4BC306
+P 10800 5250
+F 0 "#PWR0111" H 10800 5100 50  0001 C CNN
+F 1 "+HV" H 10815 5423 50  0000 C CNN
+F 2 "" H 10800 5250 50  0001 C CNN
+F 3 "" H 10800 5250 50  0001 C CNN
+	1    10800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:Conn_01x02_Male-Connector J3
+U 1 1 5C4C8F57
+P 9850 5450
+F 0 "J3" H 9956 5628 50  0000 C CNN
+F 1 "VBAT_OUT" H 9956 5537 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9850 5450 50  0001 C CNN
+F 3 "~" H 9850 5450 50  0001 C CNN
+	1    9850 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0113
+U 1 1 5C4C8F5E
+P 10200 5650
+F 0 "#PWR0113" H 10200 5400 50  0001 C CNN
+F 1 "GND" H 10205 5477 50  0000 C CNN
+F 2 "" H 10200 5650 50  0001 C CNN
+F 3 "" H 10200 5650 50  0001 C CNN
+	1    10200 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5450 10200 5450
+Wire Wire Line
+	10200 5450 10200 5250
+Wire Wire Line
+	10050 5550 10200 5550
+Wire Wire Line
+	10200 5550 10200 5650
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0114
+U 1 1 5C4CAF63
+P 10200 5250
+F 0 "#PWR0114" H 10200 5100 50  0001 C CNN
+F 1 "+BATT" H 10215 5423 50  0000 C CNN
+F 2 "" H 10200 5250 50  0001 C CNN
+F 3 "" H 10200 5250 50  0001 C CNN
+	1    10200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:LIS3DHTR-NixieHourGlass U3
+U 1 1 5C4A5D3C
+P 6450 3000
+F 0 "U3" H 5950 3550 50  0000 L CNN
+F 1 "LIS3DHTR" H 6700 2300 50  0000 L CNN
+F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 6550 3250 50  0001 C CNN
+F 3 "" H 6550 3250 50  0001 C CNN
+	1    6450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:R-Device R2
+U 1 1 5C4AA88D
+P 5150 2450
+F 0 "R2" H 5220 2496 50  0000 L CNN
+F 1 "10k" H 5220 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 2450 50  0001 C CNN
+F 3 "~" H 5150 2450 50  0001 C CNN
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:R-Device R1
+U 1 1 5C4AAB58
+P 4850 2450
+F 0 "R1" H 4920 2496 50  0000 L CNN
+F 1 "10k" H 4920 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 2450 50  0001 C CNN
+F 3 "~" H 4850 2450 50  0001 C CNN
+	1    4850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0115
+U 1 1 5C4AABC8
+P 4850 2200
+F 0 "#PWR0115" H 4850 2050 50  0001 C CNN
+F 1 "+BATT" H 4865 2373 50  0000 C CNN
+F 2 "" H 4850 2200 50  0001 C CNN
+F 3 "" H 4850 2200 50  0001 C CNN
+	1    4850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0116
+U 1 1 5C4AAC23
+P 5150 2200
+F 0 "#PWR0116" H 5150 2050 50  0001 C CNN
+F 1 "+BATT" H 5165 2373 50  0000 C CNN
+F 2 "" H 5150 2200 50  0001 C CNN
+F 3 "" H 5150 2200 50  0001 C CNN
+	1    5150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0117
+U 1 1 5C4AACE2
+P 6350 2150
+F 0 "#PWR0117" H 6350 2000 50  0001 C CNN
+F 1 "+BATT" H 6365 2323 50  0000 C CNN
+F 2 "" H 6350 2150 50  0001 C CNN
+F 3 "" H 6350 2150 50  0001 C CNN
+	1    6350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0118
+U 1 1 5C4AB32D
+P 6350 4100
+F 0 "#PWR0118" H 6350 3850 50  0001 C CNN
+F 1 "GND" H 6355 3927 50  0000 C CNN
+F 2 "" H 6350 4100 50  0001 C CNN
+F 3 "" H 6350 4100 50  0001 C CNN
+	1    6350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2150 6350 2250
+Wire Wire Line
+	6550 2300 6550 2250
+Wire Wire Line
+	6550 2250 6350 2250
+Connection ~ 6350 2250
+Wire Wire Line
+	6350 2250 6350 2300
+Wire Wire Line
+	6350 3800 6350 3900
+Wire Wire Line
+	6550 3800 6550 3900
+Wire Wire Line
+	6550 3900 6350 3900
+Connection ~ 6350 3900
+Wire Wire Line
+	6350 3900 6350 4100
+Wire Wire Line
+	4850 2200 4850 2300
+Wire Wire Line
+	5150 2200 5150 2300
+Wire Wire Line
+	5750 2750 4850 2750
+Wire Wire Line
+	5750 2850 5150 2850
+Wire Wire Line
+	4850 2600 4850 2750
+Connection ~ 4850 2750
+Wire Wire Line
+	4850 2750 4450 2750
+Wire Wire Line
+	5150 2600 5150 2850
+Connection ~ 5150 2850
+Wire Wire Line
+	5150 2850 4450 2850
+Wire Wire Line
+	7100 2750 7400 2750
+Text Label 7400 2750 0    50   ~ 0
+INT_ACCEL
+Text Label 4450 2750 0    50   ~ 0
+SCL
+Text Label 4450 2850 0    50   ~ 0
+SDA
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0119
+U 1 1 5C4CE05A
+P 5500 3600
+F 0 "#PWR0119" H 5500 3350 50  0001 C CNN
+F 1 "GND" H 5505 3427 50  0000 C CNN
+F 2 "" H 5500 3600 50  0001 C CNN
+F 3 "" H 5500 3600 50  0001 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3150 5500 3150
+Wire Wire Line
+	5500 3150 5500 3600
+$Comp
+L NixieHourglass-rescue:DS3231-NixieHourGlass U2
+U 1 1 5C5005AF
+P 3950 6650
+F 0 "U2" H 3600 7200 50  0000 L CNN
+F 1 "DS3231" H 4050 6200 50  0000 L CNN
+F 2 "SMD_Packages:SO-16-L" H 3850 6650 50  0001 C CNN
+F 3 "" H 3850 6650 50  0001 C CNN
+	1    3950 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0120
+U 1 1 5C5007FB
+P 3950 5750
+F 0 "#PWR0120" H 3950 5600 50  0001 C CNN
+F 1 "+BATT" H 3965 5923 50  0000 C CNN
+F 2 "" H 3950 5750 50  0001 C CNN
+F 3 "" H 3950 5750 50  0001 C CNN
+	1    3950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0121
+U 1 1 5C50082E
+P 3950 7400
+F 0 "#PWR0121" H 3950 7150 50  0001 C CNN
+F 1 "GND" H 3955 7227 50  0000 C CNN
+F 2 "" H 3950 7400 50  0001 C CNN
+F 3 "" H 3950 7400 50  0001 C CNN
+	1    3950 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6000 3950 5750
+Wire Wire Line
+	3950 7200 3950 7400
+Wire Wire Line
+	3400 6700 2800 6700
+$Comp
+L NixieHourglass-rescue:C-Device C5
+U 1 1 5C5183E6
+P 2450 7050
+F 0 "C5" H 2336 7004 50  0000 R CNN
+F 1 "SE-5R5-D105VYV" H 2336 7095 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2488 6900 50  0001 C CNN
+F 3 "~" H 2450 7050 50  0001 C CNN
+	1    2450 7050
+	1    0    0    1   
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0122
+U 1 1 5C518460
+P 2450 7400
+F 0 "#PWR0122" H 2450 7150 50  0001 C CNN
+F 1 "GND" H 2455 7227 50  0000 C CNN
+F 2 "" H 2450 7400 50  0001 C CNN
+F 3 "" H 2450 7400 50  0001 C CNN
+	1    2450 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6700 2450 6900
+Wire Wire Line
+	2450 7200 2450 7300
+Wire Wire Line
+	3400 6800 3000 6800
+Wire Wire Line
+	3400 6900 3000 6900
+NoConn ~ 3400 6500
+Wire Wire Line
+	3400 6600 3200 6600
+Wire Wire Line
+	3200 6600 3200 6050
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0123
+U 1 1 5C52E5EF
+P 3200 6050
+F 0 "#PWR0123" H 3200 5900 50  0001 C CNN
+F 1 "+BATT" H 3215 6223 50  0000 C CNN
+F 2 "" H 3200 6050 50  0001 C CNN
+F 3 "" H 3200 6050 50  0001 C CNN
+	1    3200 6050
+	1    0    0    -1  
+$EndComp
+Text Label 3000 6800 0    50   ~ 0
+SDA
+Text Label 3000 6900 0    50   ~ 0
+SCL
+NoConn ~ 3400 6400
+Connection ~ 2450 6700
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0124
+U 1 1 5C53614C
+P 2450 6050
+F 0 "#PWR0124" H 2450 5900 50  0001 C CNN
+F 1 "+BATT" H 2465 6223 50  0000 C CNN
+F 2 "" H 2450 6050 50  0001 C CNN
+F 3 "" H 2450 6050 50  0001 C CNN
+	1    2450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:C-Device C6
+U 1 1 5C545DEF
+P 2800 7050
+F 0 "C6" H 2915 7096 50  0000 L CNN
+F 1 "100nF" H 2915 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2838 6900 50  0001 C CNN
+F 3 "~" H 2800 7050 50  0001 C CNN
+	1    2800 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6900 2800 6700
+Connection ~ 2800 6700
+Wire Wire Line
+	2800 6700 2450 6700
+Wire Wire Line
+	2800 7200 2800 7300
+Wire Wire Line
+	2800 7300 2450 7300
+Connection ~ 2450 7300
+Wire Wire Line
+	2450 7300 2450 7400
+$Comp
+L NixieHourglass-rescue:CSTCE16M0V53-R0-NixieHourGlass Y1
+U 1 1 5C57F3D3
+P 3700 2650
+F 0 "Y1" V 4125 2595 50  0000 C CNN
+F 1 "CSTCE16M0V53-R0" V 4034 2595 50  0000 C CNN
+F 2 "NixieHourGlass:Xtal_Murata_CSTCE16M0V53-R0" H 3700 2650 50  0001 C CNN
+F 3 "~" H 3700 2650 50  0001 C CNN
+	1    3700 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 2600 3400 2600
+Wire Wire Line
+	3400 2600 3400 2450
+Wire Wire Line
+	3400 2450 3650 2450
+Wire Wire Line
+	2550 2700 3400 2700
+Wire Wire Line
+	3400 2700 3400 2850
+Wire Wire Line
+	3400 2850 3650 2850
+Wire Wire Line
+	3900 2650 4150 2650
+Wire Wire Line
+	4150 2650 4150 3150
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0125
+U 1 1 5C58C541
+P 4150 3150
+F 0 "#PWR0125" H 4150 2900 50  0001 C CNN
+F 1 "GND" H 4155 2977 50  0000 C CNN
+F 2 "" H 4150 3150 50  0001 C CNN
+F 3 "" H 4150 3150 50  0001 C CNN
+	1    4150 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 2200
+NoConn ~ 1350 2300
+NoConn ~ 5750 2950
+NoConn ~ 5750 3050
+NoConn ~ 5750 3250
+NoConn ~ 5750 3350
+NoConn ~ 5750 3450
+$Comp
+L NixieHourglass-rescue:ATmega328P-AU-MCU_Microchip_ATmega U1
+U 1 1 5C416B84
+P 1950 3200
+F 0 "U1" H 1500 4700 50  0000 C CNN
+F 1 "ATmega328P-AU" H 2350 1700 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 1950 3200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1950 3200 50  0001 C CNN
+	1    1950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4400 3100 4400
+Text Label 3100 4400 0    50   ~ 0
+SW_1
+$Comp
+L NixieHourglass-rescue:Conn_02x05_Odd_Even-Connector_Generic J1
+U 1 1 5C5BFADA
+P 5850 7150
+F 0 "J1" H 5900 7567 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5900 7476 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm_SMD" H 5850 7150 50  0001 C CNN
+F 3 "~" H 5850 7150 50  0001 C CNN
+	1    5850 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6950 5350 6950
+Wire Wire Line
+	5650 7050 5350 7050
+Wire Wire Line
+	5650 7150 5250 7150
+Wire Wire Line
+	6150 7050 6500 7050
+Text Label 5350 6950 0    50   ~ 0
+MISO
+Text Label 6500 7050 0    50   ~ 0
+MOSI
+Wire Wire Line
+	950  850  950  1050
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0126
+U 1 1 5C5FCFD6
+P 6650 6850
+F 0 "#PWR0126" H 6650 6700 50  0001 C CNN
+F 1 "+BATT" H 6665 7023 50  0000 C CNN
+F 2 "" H 6650 6850 50  0001 C CNN
+F 3 "" H 6650 6850 50  0001 C CNN
+	1    6650 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 6950 6650 6850
+Wire Wire Line
+	6150 6950 6650 6950
+Text Label 5350 7050 0    50   ~ 0
+SCK
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0127
+U 1 1 5C6025A3
+P 6650 7350
+F 0 "#PWR0127" H 6650 7100 50  0001 C CNN
+F 1 "GND" H 6655 7177 50  0000 C CNN
+F 2 "" H 6650 7350 50  0001 C CNN
+F 3 "" H 6650 7350 50  0001 C CNN
+	1    6650 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 7150 6650 7350
+Wire Wire Line
+	6150 7150 6650 7150
+Text Label 4900 7150 0    50   ~ 0
+RESET
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0128
+U 1 1 5C60CF53
+P 5250 6400
+F 0 "#PWR0128" H 5250 6250 50  0001 C CNN
+F 1 "+BATT" H 5265 6573 50  0000 C CNN
+F 2 "" H 5250 6400 50  0001 C CNN
+F 3 "" H 5250 6400 50  0001 C CNN
+	1    5250 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:R-Device R3
+U 1 1 5C60D096
+P 5250 6700
+F 0 "R3" H 5320 6746 50  0000 L CNN
+F 1 "10k" H 5320 6655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5180 6700 50  0001 C CNN
+F 3 "~" H 5250 6700 50  0001 C CNN
+	1    5250 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6400 5250 6550
+Wire Wire Line
+	5250 6850 5250 7150
+Connection ~ 5250 7150
+Wire Wire Line
+	5250 7150 4900 7150
+Wire Wire Line
+	5650 7250 5350 7250
+Wire Wire Line
+	6150 7250 6500 7250
+Text Label 6500 7250 0    50   ~ 0
+TXD
+Text Label 5350 7250 0    50   ~ 0
+RXD
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0129
+U 1 1 5C633E58
+P 6950 4700
+F 0 "#PWR0129" H 6950 4550 50  0001 C CNN
+F 1 "+BATT" H 6965 4873 50  0000 C CNN
+F 2 "" H 6950 4700 50  0001 C CNN
+F 3 "" H 6950 4700 50  0001 C CNN
+	1    6950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:+BATT-power #PWR0130
+U 1 1 5C633FC2
+P 7700 4700
+F 0 "#PWR0130" H 7700 4550 50  0001 C CNN
+F 1 "+BATT" H 7715 4873 50  0000 C CNN
+F 2 "" H 7700 4700 50  0001 C CNN
+F 3 "" H 7700 4700 50  0001 C CNN
+	1    7700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0131
+U 1 1 5C634003
+P 6950 6100
+F 0 "#PWR0131" H 6950 5850 50  0001 C CNN
+F 1 "GND" H 6955 5927 50  0000 C CNN
+F 2 "" H 6950 6100 50  0001 C CNN
+F 3 "" H 6950 6100 50  0001 C CNN
+	1    6950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:GND-power #PWR0132
+U 1 1 5C634044
+P 7700 6100
+F 0 "#PWR0132" H 7700 5850 50  0001 C CNN
+F 1 "GND" H 7705 5927 50  0000 C CNN
+F 2 "" H 7700 6100 50  0001 C CNN
+F 3 "" H 7700 6100 50  0001 C CNN
+	1    7700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:R-Device R4
+U 1 1 5C639855
+P 6950 4950
+F 0 "R4" H 7020 4996 50  0000 L CNN
+F 1 "10k" H 7020 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6880 4950 50  0001 C CNN
+F 3 "~" H 6950 4950 50  0001 C CNN
+	1    6950 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L NixieHourglass-rescue:R-Device R5
+U 1 1 5C63995F
+P 7700 4950
+F 0 "R5" H 7770 4996 50  0000 L CNN
+F 1 "10k" H 7770 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 4950 50  0001 C CNN
+F 3 "~" H 7700 4950 50  0001 C CNN
+	1    7700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4700 6950 4800
+Wire Wire Line
+	6950 5100 6950 5200
+Wire Wire Line
+	7700 5100 7700 5200
+Wire Wire Line
+	7700 4800 7700 4700
+Wire Wire Line
+	6950 6100 6950 5950
+Wire Wire Line
+	7700 5950 7700 6100
+Text Notes 5550 6350 0    50   ~ 0
+VCC on Debug connector must be 3V
+Wire Wire Line
+	2450 6050 2450 6700
+$Comp
+L NixieHourglass-rescue:SKRPACE010-NixieHourGlass SW1
+U 1 1 5C51921F
+P 6950 5750
+F 0 "SW1" H 6950 5275 50  0000 C CNN
+F 1 "SKRPACE010" H 6950 5366 50  0000 C CNN
+F 2 "NixieHourGlass:SW_Tactile_SKRPACE010" H 6950 5950 50  0001 C CNN
+F 3 "" H 6950 5950 50  0001 C CNN
+	1    6950 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L NixieHourglass-rescue:SKRPACE010-NixieHourGlass SW2
+U 1 1 5C5192AB
+P 7700 5750
+F 0 "SW2" H 7700 5275 50  0000 C CNN
+F 1 "SKRPACE010" H 7150 6000 50  0000 C CNN
+F 2 "NixieHourGlass:SW_Tactile_SKRPACE010" H 7700 5950 50  0001 C CNN
+F 3 "" H 7700 5950 50  0001 C CNN
+	1    7700 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 5500 7450 5500
+Wire Wire Line
+	7450 5500 7450 5200
+Wire Wire Line
+	7450 5200 7700 5200
+Wire Wire Line
+	7700 5200 7950 5200
+Wire Wire Line
+	7950 5200 7950 5500
+Wire Wire Line
+	7950 5500 7900 5500
+Connection ~ 7700 5200
+Wire Wire Line
+	7500 5750 7450 5750
+Wire Wire Line
+	7450 5750 7450 5950
+Wire Wire Line
+	7450 5950 7700 5950
+Wire Wire Line
+	7700 5950 7950 5950
+Wire Wire Line
+	7950 5950 7950 5750
+Wire Wire Line
+	7950 5750 7900 5750
+Connection ~ 7700 5950
+Wire Wire Line
+	6750 5500 6700 5500
+Wire Wire Line
+	6700 5500 6700 5200
+Wire Wire Line
+	6700 5200 6950 5200
+Wire Wire Line
+	6950 5200 7200 5200
+Wire Wire Line
+	7200 5200 7200 5500
+Wire Wire Line
+	7200 5500 7150 5500
+Connection ~ 6950 5200
+Wire Wire Line
+	6750 5750 6700 5750
+Wire Wire Line
+	6700 5750 6700 5950
+Wire Wire Line
+	6700 5950 6950 5950
+Wire Wire Line
+	7200 5950 7200 5750
+Wire Wire Line
+	7200 5750 7150 5750
+Connection ~ 6950 5950
+Wire Wire Line
+	6950 5950 7200 5950
+$EndSCHEMATC

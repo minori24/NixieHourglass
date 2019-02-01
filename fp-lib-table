@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name NixieHourGlass)(type KiCad)(uri $KIPRJMOD/lib/modules/NixieHourGlass.pretty)(options "")(descr ""))
+  (lib (name Package_QFP)(type KiCad)(uri $KISYSMOD/Package_QFP.pretty)(options "")(descr ""))
+  (lib (name Package_LGA)(type KiCad)(uri $KISYSMOD/Package_LGA.pretty)(options "")(descr ""))
+  (lib (name Package_SO)(type KiCad)(uri $KISYSMOD/Package_SO.pretty)(options "")(descr ""))
+)

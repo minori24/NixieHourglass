@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name russian-nixies)(type Legacy)(uri $KIPRJMOD/lib/symbols/russian-nixies.lib)(options "")(descr ""))
+  (lib (name NixieHourGlass)(type Legacy)(uri "C:/Users/Minori Takao/Dropbox/Dev/KiCad/NixieHourglass/lib/symbols/NixieHourGlass.lib")(options "")(descr ""))
+  (lib (name NixieHourglass-rescue)(type Legacy)(uri ${KIPRJMOD}/NixieHourglass-rescue.lib)(options "")(descr ""))
+)
