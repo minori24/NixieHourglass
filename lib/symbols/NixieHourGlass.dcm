@@ -6,6 +6,15 @@ K quartz ceramic resonator oscillator
 F ~
 $ENDCMP
 #
+$CMP MCP73832T-2ACI_OT
+D Battery Charger
+$ENDCMP
+#
+$CMP RX8900CE
+D SEIKO EPSON DTCXO RTC Module
+K crystal
+$ENDCMP
+#
 $CMP SKRPACE010
 D Push button switch, normally closed, generic, four pins
 K switch normally-closed pushbutton push-button
