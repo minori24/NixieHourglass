@@ -630,7 +630,7 @@ L NixieHourglass-rescue:R-Device R3
 U 1 1 5CC1BCBF
 P 6900 1150
 F 0 "R3" H 6970 1196 50  0000 L CNN
-F 1 "10k" H 6970 1105 50  0000 L CNN
+F 1 "220" H 6970 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6830 1150 50  0001 C CNN
 F 3 "~" H 6900 1150 50  0001 C CNN
 	1    6900 1150
@@ -889,10 +889,10 @@ F 3 "~" H 8800 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:TLP127 U?
+L Isolator:TLP127 U6
 U 1 1 5CBCC236
 P 7500 1250
-F 0 "U?" H 7500 1575 50  0000 C CNN
+F 0 "U6" H 7500 1575 50  0000 C CNN
 F 1 "TLP127" H 7500 1484 50  0000 C CNN
 F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 7500 950 50  0001 C CIN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 7430 1250 50  0001 L CNN
@@ -908,10 +908,10 @@ Wire Wire Line
 Wire Wire Line
 	7950 850  7950 1150
 $Comp
-L NixieHourglass-rescue:GND-power #PWR?
+L NixieHourglass-rescue:GND-power #PWR024
 U 1 1 5CBE2900
 P 7100 1500
-F 0 "#PWR?" H 7100 1250 50  0001 C CNN
+F 0 "#PWR024" H 7100 1250 50  0001 C CNN
 F 1 "GND" H 7105 1327 50  0000 C CNN
 F 2 "" H 7100 1500 50  0001 C CNN
 F 3 "" H 7100 1500 50  0001 C CNN
